@@ -11,7 +11,7 @@ import kotlin.test.assertEquals
  */
 class ClosestToZeroTest {
     private val arr =
-        floatArrayOf(7f, -10f, 13f, 8f, 4f, -7.2f, -12f, -3.7f, 3.5f, -9.6f, 6.5f, -1.7f)
+        floatArrayOf(7f, -10f, 13f, 8f, 4f, -7.2f, -12f, -3.7f, 3.5f, -9.6f, 6.5f, -1.7f, -6.2f, 7f)
 
     @Test
     fun closestToZero() {
@@ -22,8 +22,7 @@ class ClosestToZeroTest {
     private fun closestSmaller(arr: FloatArray, number: Float) : Float {
         // Insert all array elements into a TreeSet
         val ts = TreeSet<Float>()
-        for (i in arr.indices)
-            ts.add(arr[i])
+        ts.addAll(arr.toList())
 
         return printClosestToZero(ts, number)
     }
