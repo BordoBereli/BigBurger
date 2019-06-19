@@ -12,7 +12,7 @@ android {
     buildToolsVersion globalConfiguration["androidBuildToolsVersion"]
 
     defaultConfig {
-        applicationId "com.vibuy.legacy.bigburger"
+        applicationId "com.kutluoglu.demo.bigburger"
         minSdkVersion globalConfiguration["androidMinSdkVersion"]
         targetSdkVersion globalConfiguration["androidTargetSdkVersion"]
         versionCode 1
@@ -98,7 +98,7 @@ dependencies {
     kapt mobileUiDependencies.glideCompiler
 
 
-        testImplementation mobileUiTestDependencies.kotlinJUnit
+    testImplementation mobileUiTestDependencies.kotlinJUnit
 
     // Instrumentation test dependencies
 //    androidTestImplementation mobileUiTestDependencies.junit

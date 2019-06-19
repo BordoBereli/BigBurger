@@ -5,7 +5,7 @@
             app:startDestination="@id/catalog" android:label="Main">
 
     <fragment android:id="@+id/catalog"
-              android:name="com.vibuy.legacy.bigburger.main.features.catalog.Catalog"
+              android:name="com.kutluoglu.demo.bigburger.main.features.catalog.Catalog"
               android:label="@string/catalog"
               tools:layout="@layout/fragment_catalog">
         <action android:id="@+id/action_catalogFragment_to_shoppingChart"
@@ -13,7 +13,7 @@
     </fragment>
 
     <fragment android:id="@+id/shoppingCart"
-              android:name="com.vibuy.legacy.bigburger.main.features.shoppingCart.ShoppingCart"
+              android:name="com.kutluoglu.demo.bigburger.main.features.shoppingCart.ShoppingCart"
               android:label="@string/shopping_cart"
               tools:layout="@layout/fragment_shopping_cart"/>
 </navigation>
